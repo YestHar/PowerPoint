@@ -5,7 +5,7 @@
 
 class ICommand {
 public:
-    
+    virtual void exe() = 0;
 };
 
 #endif // COMMAND_HPP
