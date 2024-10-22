@@ -2,10 +2,10 @@
 CXX = g++
 
 # Compiler flags
-CXXFLAGS = -Wall -Wextra -std=c++11
+CXXFLAGS = -Wall -Wextra -std=c++17  # Updated to C++17
 
 # Source files
-SRCS = main.cpp Parser.hpp Command.hpp CommandFactory.hpp Controller.hpp SemanticAnalysis.hpp Tokenizer.hpp
+SRCS = main.cpp Parser.cpp Command.cpp CommandFactory.cpp Controller.cpp Document.cpp Editor.cpp SemanticAnalysis.cpp Tokenizer.cpp SyntaxAnalysis.cpp 
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)
@@ -20,12 +20,15 @@ all: $(TARGET)
 $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
-# Compile source files into object files
+# Compile source files into object files and generate dependencies
 %.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $<
+	$(CXX) $(CXXFLAGS) -MMD -MF"$(@:.o=.d)" -c $<
 
 # Clean target to remove object files and the executable
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -f $(OBJS) $(TARGET) *.d
 
 .PHONY: all clean
+
+# Include dependency files
+-include $(OBJS:.o=.d)

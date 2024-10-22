@@ -25,10 +25,6 @@ struct SToken {
     SToken(EType type, std::variant<std::string, int, double> content)
         : _type(type), _content(content) {}
 
-    // Copy constructor
-    SToken(const SToken& other)
-        : _type(other._type), _content(other._content) {}
-
     // Move constructor
     SToken(SToken&& other) noexcept
         : _type(other._type), _content(std::move(other._content)) {}
