@@ -15,6 +15,7 @@ struct SToken {
         Word,
         Arg,
         Value,
+        Invalid,
         EOL // End of line, if needed for processing
     } _type;
 
@@ -49,9 +50,6 @@ struct SToken {
     std::variant<std::string, int, double> getContent() const { return _content; }
 
 };
-
-
-
 
 class Tokenizer {
 public:

@@ -5,7 +5,7 @@ CXX = g++
 CXXFLAGS = -Wall -Wextra -std=c++11
 
 # Source files
-SRCS = main.cpp Parser.hpp Command.hpp CommandFactory.hpp Controller.hpp SemanticAnalysis.hpp SyntaxAnalysis.hpp Tokenizer.hpp
+SRCS = main.cpp Parser.hpp Command.hpp CommandFactory.hpp Controller.hpp SemanticAnalysis.hpp Tokenizer.hpp
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)

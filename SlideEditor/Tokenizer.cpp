@@ -29,11 +29,6 @@ bool isDouble(const std::string& token) {
     return hasDot;
 }
 
-bool isArgument(const std::string& token) {
-    std::string subtoken = token.substr(1);
-    return !token.empty() && token[0] == '-' && isWord(subtoken);
-}
-
 bool isWord(const std::string& token) {
     for (char c : token) {
         if (!std::isalpha(c) && c != '_') {
@@ -43,6 +38,10 @@ bool isWord(const std::string& token) {
     return true;  // All characters passed the check
 }
 
+bool isArgument(const std::string& token) {
+    std::string subtoken = token.substr(1);
+    return !token.empty() && token[0] == '-' && isWord(subtoken);
+}
 
 bool isValue(const std::string& token) {
     // We consider values to be numbers (int or double)

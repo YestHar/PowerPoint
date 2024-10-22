@@ -12,27 +12,17 @@ class Parser;
 class Controller {
 public:
     void startProgram() {
-        std::string input;
-
         while (true) {
-            // Get input from the user
-            std::cout << "Enter your command: ";
-            getline(std::cin, input);
-
-            // Convert the input to an input stream
-            std::istringstream inputStream(input);
-
             try {
                 // Instantiate a Parser object
                 Parser parser;
 
                 // Get a Command object after parsing
-                std::unique_ptr<ICommand> command = parser.parse(inputStream);
+                std::unique_ptr<ICommand> command = parser.parse(std::cin);
 
                 // Execute the command
                 command->exe();
 
-                // Exit loop if needed (for example, if you have a quit command)
                 break;
 
             } catch (const std::exception& e) {

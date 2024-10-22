@@ -1,8 +1,11 @@
 #ifndef PARSER_HPP
 #define PARSER_HPP
 
+#include <iostream>
 #include <memory>
 #include <sstream>
+#include <variant>
+
 #include "Tokenizer.hpp"
 #include "SyntaxAnalysis.hpp"
 #include "SemanticAnalysis.hpp"
@@ -28,11 +31,11 @@ public:
     Parser() 
         : tokenizer(std::make_unique<Tokenizer>()), 
           syntaxAnalyzer(std::make_unique<SyntaxAnalysis>()),
-          semanticAnalyzer(nullptr) // Will add semantic analysis later
+          semanticAnalyzer(std::make_unique<SemanticAnalysis>())
     {}
 
     // The parse function that processes the input and returns a command object
-    std::unique_ptr<ICommand> parse(std::istringstream& inputStream);
+    std::unique_ptr<ICommand> parse(std::istream& input);
 };
 
 #endif // PARSER_HPP
