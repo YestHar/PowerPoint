@@ -16,7 +16,7 @@ struct SToken {
         Arg,
         Value,
         Invalid,
-        EOL // End of line, if needed for processing
+        EOL 
     } _type;
 
     std::variant<std::string, int, double> _content;
@@ -49,7 +49,6 @@ struct SToken {
 
 class Tokenizer {
 public:
-    
     // Function to tokenize the input stream
     std::unique_ptr<SToken> tokenize(std::istream& inputStream);  
 

@@ -1,4 +1,4 @@
-#include "Controller.hpp"
+#include "CLI/Controller.hpp"
 
 // Main function connects to Controller
 int main() {
