@@ -1,3 +1,6 @@
+#ifndef SLIDECOLLECTION_HPP
+#define SLIDECOLLECTION_HPP
+
 #include <vector>
 #include <memory>
 #include <iterator>
@@ -46,3 +49,6 @@ public:
         return const_iterator(*this, slides.size());
     }
 };
+
+
+#endif // SLIDECOLLECTION_HPP
