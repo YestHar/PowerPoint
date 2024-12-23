@@ -36,10 +36,6 @@ std::shared_ptr<Controller> Application::get_controller() const {
     return controller;
 }
 
-void Application::initialize() {
-    // Here we could initialize any further components if needed
-    // For example, setup logging, configuration, etc.
-}
 
 void Application::run() {
     // Start the program by calling the Controller's start method

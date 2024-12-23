@@ -28,8 +28,6 @@ public:
     std::shared_ptr<Visualization> get_visualization() const;
     std::shared_ptr<Controller> get_controller() const;  // Add access to Controller
 
-    // Initialize the components
-    void initialize();
 
     // Run the application (starting point)
     void run();
