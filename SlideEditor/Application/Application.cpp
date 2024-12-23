@@ -38,8 +38,8 @@ std::shared_ptr<Controller> Application::get_controller() const {
 
 
 void Application::run() {
-    // Start the program by calling the Controller's start method
-    controller->startProgram();  // This could be the entry point for the app
+    // Start program 
+    controller->startProgram(); 
 }
 
 
