@@ -5,27 +5,31 @@
 #include <vector>
 #include <memory>
 #include <string>
-#include <vector>
-#include <memory>
 #include <iostream>
 
 class Slide {
 public:
-    void addItem(std::unique_ptr<Item> item) ;
+    // Add a new item to the slide
+    void addItem(std::unique_ptr<Item> item);
 
-    std::shared_ptr<Item> getItem(size_t index);
+    // Get an item by index
+    std::shared_ptr<Item> getItem(size_t index) const;
 
-    size_t getItemCount() const ;
+    // Get the number of items on the slide
+    size_t getItemCount() const;
 
+    // Remove an item by index
     void removeItem(size_t index);
 
+    // Set the background color of the slide
     void setBackgroundColor(const std::string& color);
+
+    // Get the background color of the slide
     std::string getBackgroundColor() const;
+
 private:
-    std::vector<std::unique_ptr<Item>> items;
-    std::string backgroundColor;  
-
+    std::vector<std::unique_ptr<Item>> items; // Items on the slide
+    std::string backgroundColor = "white";   // Default background color
 };
-
 
 #endif // SLIDE_HPP

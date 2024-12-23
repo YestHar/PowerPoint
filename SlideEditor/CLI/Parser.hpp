@@ -6,8 +6,8 @@
 #include <sstream>
 #include "Tokenizer.hpp"
 #include "SemanticAnalysis.hpp"
-#include "Command.hpp"
-#include "CommandFactory.hpp"
+// #include "Command.hpp"
+#include "Command/CommandFactory.hpp"
 
 class Tokenizer;
 class SemanticAnalysis;

@@ -1,16 +1,19 @@
-#ifndef   Controller_HPP
-#define   Controller_HPP
+#ifndef CONTROLLER_HPP
+#define CONTROLLER_HPP
 
-#include <iostream>
-#include <sstream>
+#include "../Application/Application.hpp"
+#include "Command/ICommand.hpp"
 #include "Parser.hpp"
-#include "Command.hpp"
+#include <memory>
+#include <iostream>
 
 class Parser;
 
 class Controller {
 public:
+    // Starts the program, parsing commands and executing them
     void startProgram();
+
 };
 
-#endif // Controller_HPP
+#endif // CONTROLLER_HPP

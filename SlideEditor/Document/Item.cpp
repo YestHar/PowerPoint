@@ -1,80 +1,34 @@
 #include "Item.hpp"
 
-// ShapeAttributes constructor
-ShapeAttributes::ShapeAttributes(const std::string& col, int thickness, const std::string& lineCol)
-    : color(col), lineThickness(thickness), lineColor(lineCol) {}
-
-std::string ShapeAttributes::getColor() const {
-    return color;
+int Geometry::get_x() const {
+    return x;
 }
 
-int ShapeAttributes::getLineThickness() const {
-    return lineThickness;
+int Geometry::get_y() const {
+    return y;
 }
 
-std::string ShapeAttributes::getLineColor() const {
-    return lineColor;
+int Geometry::get_width() const {
+    return width;
 }
 
-void ShapeAttributes::setColor(const std::string& newColor) {
-    color = newColor;
+int Geometry::get_height() const {
+    return height;
 }
 
-void ShapeAttributes::setLineThickness(int newThickness) {
-    lineThickness = newThickness;
+// Setters
+void Geometry::set_x(int new_x) {
+    x = new_x;
 }
 
-void ShapeAttributes::setLineColor(const std::string& newLineColor) {
-    lineColor = newLineColor;
+void Geometry::set_y(int new_y) {
+    y = new_y;
 }
 
-// Square constructor
-Square::Square(double x1, double y1, double x2, double y2, const std::string& color, int thickness, const std::string& lineColor)
-    : geometry{x1, y1, x2, y2},
-      attributes(std::make_shared<ShapeAttributes>(color, thickness, lineColor)) {}
-
-EType Square::getType() const {
-    return EType::Square;
+void Geometry::set_width(int new_width) {
+    width = new_width;
 }
 
-SGeom Square::getGeometry() const {
-    return geometry;
-}
-
-std::shared_ptr<IAttributes> Square::getAttributes() const {
-    return attributes;
-}
-
-// Circle constructor
-Circle::Circle(double x1, double y1, double radiusX, double radiusY, const std::string& color, int thickness, const std::string& lineColor)
-    : geometry{x1, y1, radiusX, radiusY},
-      attributes(std::make_shared<ShapeAttributes>(color, thickness, lineColor)) {}
-
-EType Circle::getType() const {
-    return EType::Circle;
-}
-
-SGeom Circle::getGeometry() const {
-    return geometry;
-}
-
-std::shared_ptr<IAttributes> Circle::getAttributes() const {
-    return attributes;
-}
-
-// Triangle constructor
-Triangle::Triangle(double x1, double y1, double x2, double y2, const std::string& color, int thickness, const std::string& lineColor)
-    : geometry{x1, y1, x2, y2},
-      attributes(std::make_shared<ShapeAttributes>(color, thickness, lineColor)) {}
-
-EType Triangle::getType() const {
-    return EType::Triangle;
-}
-
-SGeom Triangle::getGeometry() const {
-    return geometry;
-}
-
-std::shared_ptr<IAttributes> Triangle::getAttributes() const {
-    return attributes;
+void Geometry::set_height(int new_height) {
+    height = new_height;
 }
