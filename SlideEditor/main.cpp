@@ -1,9 +1,9 @@
-#include "CLI/Controller.hpp"
+#include "Application/Application.hpp"
 
 // Main function connects to Controller
 int main() {
-    Controller controller;
-    controller.startProgram();
+    Application& app = Application::get_instance(); 
+    app.run(); // Start the application
 
     return 0;
 }
