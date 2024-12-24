@@ -1,0 +1,3 @@
+/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles/SlideEditor.dir
+/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles/edit_cache.dir
+/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles/rebuild_cache.dir

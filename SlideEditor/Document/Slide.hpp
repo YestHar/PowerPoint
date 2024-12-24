@@ -10,7 +10,9 @@
 class Slide {
 public:
     // Add a new item to the slide
-    void addItem(std::unique_ptr<Item> item);
+    void addItem(std::shared_ptr<Item> item);
+    Slide(const std::string& slide_name) : slideName(slide_name) {};
+    Slide() = default;
 
     // Get an item by index
     std::shared_ptr<Item> getItem(size_t index) const;
@@ -28,8 +30,9 @@ public:
     std::string getBackgroundColor() const;
 
 private:
-    std::vector<std::unique_ptr<Item>> items; // Items on the slide
+    std::vector<std::shared_ptr<Item>> items; // Items on the slide
     std::string backgroundColor = "white";   // Default background color
+    std::string  slideName;   // Name of the slide
 };
 
 #endif // SLIDE_HPP

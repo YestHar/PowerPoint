@@ -38,7 +38,7 @@ struct Attributes {
     std::string borderColor;
 
     Attributes(std::string color = "white", int borderWidth = 1, std::string borderColor = "black")
-        : color(std::move(color)), borderWidth(borderWidth), borderColor(std::move(borderColor)) {}
+        : color(color), borderWidth(borderWidth), borderColor(borderColor) {}
 };
 
 // Define the Item class

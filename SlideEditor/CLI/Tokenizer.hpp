@@ -27,13 +27,13 @@ struct SToken {
 
     // Move constructor
     SToken(SToken&& other) noexcept
-        : _type(other._type), _content(std::move(other._content)) {}
+        : _type(other._type), _content(other._content) {}
 
     // Move assignment operator
     SToken& operator=(SToken&& other) noexcept {
         if (this != &other) {
             _type = other._type;
-            _content = std::move(other._content);
+            _content = other._content;
         }
         return *this;
     }
@@ -50,7 +50,7 @@ struct SToken {
 class Tokenizer {
 public:
     // Function to tokenize the input stream
-    std::unique_ptr<SToken> tokenize(std::istream& inputStream);  
+    std::shared_ptr<SToken> tokenize(std::istream& inputStream);  
 
     SToken determineTokenType(const std::string& word);   
 

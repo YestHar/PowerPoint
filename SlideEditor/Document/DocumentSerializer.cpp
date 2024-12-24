@@ -55,19 +55,21 @@ std::shared_ptr<SlideCollection> DocumentSerializer::load(const std::string& fil
             std::getline(file, line); // BackgroundColor line
             std::istringstream(line.substr(17)) >> backgroundColor; // Extract background color
 
-            auto slide = std::make_unique<Slide>();
+            auto slide = std::make_shared<Slide>();
             slide->setBackgroundColor(backgroundColor);
 
             // Read items in the slide
             while (std::getline(file, line) && line.find("Item") != std::string::npos) {
-                auto item = std::make_unique<Item>(0, 0, 100, 100, Attributes());  // Default geometry and attributes
-
                 // Read item details
                 std::string itemTypeStr;
                 std::getline(file, line); // Type line
                 std::istringstream(line.substr(6)) >> itemTypeStr;
 
                 EType type = static_cast<EType>(std::stoi(itemTypeStr));
+                
+                auto item = std::make_shared<Item>(0, 0, 100, 100, Attributes(), type);  // Default geometry and attributes
+
+               
 
                 // Read geometry
                 std::getline(file, line); // Geometry line
@@ -84,11 +86,11 @@ std::shared_ptr<SlideCollection> DocumentSerializer::load(const std::string& fil
                 item->set_attributes(Attributes(color, borderWidth, borderColor));
 
                 // Add item to slide
-                slide->addItem(std::move(item));
+                slide->addItem(item);
             }
 
             // Add slide to collection
-            collection->addSlide(std::move(slide), collection->getCount());
+            collection->addSlide(slide, collection->getCount());
         }
     }
     

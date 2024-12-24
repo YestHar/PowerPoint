@@ -62,11 +62,11 @@ SToken Tokenizer::determineTokenType(const std::string& word) {
     }
 }
 
-std::unique_ptr<SToken> Tokenizer::tokenize(std::istream& inputStream) {
+std::shared_ptr<SToken> Tokenizer::tokenize(std::istream& inputStream) {
     std::string word;
 
     if (inputStream.eof()) {
-        return std::make_unique<SToken>(SToken::EType::EOL, "");
+        return std::make_shared<SToken>(SToken::EType::EOL, "");
     }
 
     if (inputStream >> word) {
@@ -76,8 +76,8 @@ std::unique_ptr<SToken> Tokenizer::tokenize(std::istream& inputStream) {
 
         SToken result = determineTokenType(word);
         
-        return std::make_unique<SToken>(result.getType(), result.getContent());
+        return std::make_shared<SToken>(result.getType(), result.getContent());
     }
 
-    return std::make_unique<SToken>(SToken::EType::EOL, "");
+    return std::make_shared<SToken>(SToken::EType::EOL, "");
 }

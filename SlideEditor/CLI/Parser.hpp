@@ -6,7 +6,6 @@
 #include <sstream>
 #include "Tokenizer.hpp"
 #include "SemanticAnalysis.hpp"
-// #include "Command.hpp"
 #include "Command/CommandFactory.hpp"
 
 class Tokenizer;
@@ -16,16 +15,16 @@ class CommandFactory;
 
 class Parser {
 private:
-    std::unique_ptr<Tokenizer> tokenizer;
-    std::unique_ptr<SemanticAnalysis> semanticAnalyzer;
+    std::shared_ptr<Tokenizer> tokenizer;
+    std::shared_ptr<SemanticAnalysis> semanticAnalyzer;
 
 public:
     Parser() 
-        : tokenizer(std::make_unique<Tokenizer>()), 
-          semanticAnalyzer(std::make_unique<SemanticAnalysis>())
+        : tokenizer(std::make_shared<Tokenizer>()), 
+          semanticAnalyzer(std::make_shared<SemanticAnalysis>())
     {}
 
-    std::unique_ptr<ICommand> parse(std::istream& input);
+    std::shared_ptr<ICommand> parse(std::istream& input);
 };
 
 #endif // PARSER_HPP

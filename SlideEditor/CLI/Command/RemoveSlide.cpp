@@ -1,3 +1,4 @@
+
 #include "RemoveSlide.hpp"
 
 RemoveSlide::RemoveSlide(const std::unordered_map<std::string, std::vector<std::variant<std::string, int, double>>>& args)

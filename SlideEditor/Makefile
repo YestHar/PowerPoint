@@ -18,7 +18,6 @@ APP_DIR = $(SRC_DIR)/Application
 SRCS = main.cpp \
     $(APP_DIR)/Application.cpp \
     $(CLI_CMD_DIR)/AddSlide.cpp \
-    $(CLI_CMD_DIR)/CommandFactory.cpp \
     $(CLI_CMD_DIR)/Exit.cpp \
     $(CLI_CMD_DIR)/Help.cpp \
     $(CLI_CMD_DIR)/ICommand.cpp \
@@ -33,12 +32,12 @@ SRCS = main.cpp \
     $(EDITOR_DIR)/AddSlideAction.cpp \
     $(EDITOR_DIR)/Editor.cpp \
     $(EDITOR_DIR)/RemoveSlideAction.cpp \
-    $(VIS_DIR)/Visualization.cpp
+    $(VIS_DIR)/Visualization.cpp \
+    $(CLI_CMD_DIR)/CommandFactory.cpp 
 
 # Header files
 HDRS = $(APP_DIR)/Application.hpp \
     $(CLI_CMD_DIR)/AddSlide.hpp \
-    $(CLI_CMD_DIR)/CommandFactory.hpp \
     $(CLI_CMD_DIR)/Exit.hpp \
     $(CLI_CMD_DIR)/Help.hpp \
     $(CLI_CMD_DIR)/ICommand.hpp \
@@ -55,7 +54,8 @@ HDRS = $(APP_DIR)/Application.hpp \
     $(EDITOR_DIR)/IAction.hpp \
     $(EDITOR_DIR)/RemoveSlideAction.hpp \
     $(VIS_DIR)/IVisualization.hpp \
-    $(VIS_DIR)/Visualization.hpp
+    $(VIS_DIR)/Visualization.hpp \
+    $(CLI_CMD_DIR)/CommandFactory.hpp 
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)

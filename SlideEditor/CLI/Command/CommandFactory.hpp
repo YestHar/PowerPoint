@@ -12,21 +12,30 @@
 #include "Exit.hpp"
 #include "Help.hpp"
 
+// class AddSlide : public ICommand {
+// public:
+//     AddSlide(const std::unordered_map<std::string, std::vector<std::variant<std::string, int, double>>>& args);
+//     void exe() override;
+
+// private:
+//     int position;
+// };
+
 class CommandFactory {
 public:
-    using CommandCreator = std::function<std::unique_ptr<ICommand>(const std::unordered_map<std::string, std::vector<std::variant<std::string, int, double>>>&)>;
+    using CommandCreator = std::function<std::shared_ptr<ICommand>(const std::unordered_map<std::string, std::vector<std::variant<std::string, int, double>>>&)>;
 
     CommandFactory() {
         // Initialize command map with associated creation functions
         commandMap = {
             {"addSlide", [this](const auto& args) { return this->createAddSlide(args); }},
             {"removeSlide", [this](const auto& args) { return this->createRemoveSlide(args); }},
-            {"exit", [](const auto&) { return createExit(); }},
-            {"help", [](const auto&) { return createHelp(); }},
+            {"exit", [this](const auto&) { return createExit(); }},
+            {"help", [this](const auto&) { return createHelp(); }},
         };
     }
 
-    std::unique_ptr<ICommand> createCommand(const std::string& commandWord, const std::unordered_map<std::string, std::vector<std::variant<std::string, int, double>>>& commandArgs) {
+    std::shared_ptr<ICommand> createCommand(const std::string& commandWord, const std::unordered_map<std::string, std::vector<std::variant<std::string, int, double>>>& commandArgs) {
         auto it = commandMap.find(commandWord);
         if (it != commandMap.end()) {
             return it->second(commandArgs);
@@ -38,20 +47,20 @@ private:
     std::unordered_map<std::string, CommandCreator> commandMap;
 
     // Command creation functions simplified to no longer need Editor or Visualization
-    std::unique_ptr<ICommand> createAddSlide(const std::unordered_map<std::string, std::vector<std::variant<std::string, int, double>>>& args) {
-        return std::make_unique<AddSlide>(args);  
+    std::shared_ptr<ICommand> createAddSlide(const std::unordered_map<std::string, std::vector<std::variant<std::string, int, double>>>& args) {
+        return std::make_shared<AddSlide>(args);  
     }
 
-    std::unique_ptr<ICommand> createRemoveSlide(const std::unordered_map<std::string, std::vector<std::variant<std::string, int, double>>>& args) {
-        return std::make_unique<RemoveSlide>(args); 
+    std::shared_ptr<ICommand> createRemoveSlide(const std::unordered_map<std::string, std::vector<std::variant<std::string, int, double>>>& args) {
+        return std::make_shared<RemoveSlide>(args); 
     }
 
-    static std::unique_ptr<ICommand> createExit() {
-        return std::make_unique<Exit>();
+    std::shared_ptr<ICommand> createExit() {
+        return std::make_shared<Exit>();
     }
 
-    static std::unique_ptr<ICommand> createHelp() {
-        return std::make_unique<Help>();
+    std::shared_ptr<ICommand> createHelp() {
+        return std::make_shared<Help>();
     }
 };
 

@@ -1,13 +1,13 @@
 #include "Parser.hpp"
 
-std::unique_ptr<ICommand> Parser::parse(std::istream& inputStream) {
+std::shared_ptr<ICommand> Parser::parse(std::istream& inputStream) {
     enum class State { Start, Cmd, CurrentCmd, Arg, Value, Error, End };
 
     const std::unordered_map<State, std::unordered_map<SToken::EType, State>> stateMachine = {
         { State::Start,      { { SToken::EType::Word, State::Cmd }, { SToken::EType::EOL, State::End }, { SToken::EType::Arg, State::Error }, { SToken::EType::Value, State::Error }, { SToken::EType::Invalid, State::Error } } },
         { State::Cmd,        { { SToken::EType::Word, State::Cmd }, { SToken::EType::Arg, State::CurrentCmd }, { SToken::EType::EOL, State::End }, { SToken::EType::Value, State::Error }, { SToken::EType::Invalid, State::Error } } },
         { State::CurrentCmd, { { SToken::EType::Arg, State::Arg } } },
-        { State::Arg,        { { SToken::EType::Arg, State::Arg }, { SToken::EType::Value, State::Value }, { SToken::EType::EOL, State::End }, { SToken::EType::Word, State::Error }, { SToken::EType::Invalid, State::Error } } },
+        { State::Arg,        { { SToken::EType::Arg, State::Arg }, { SToken::EType::Value, State::Value }, { SToken::EType::EOL, State::Error }, { SToken::EType::Word, State::Error }, { SToken::EType::Invalid, State::Error } } },
         { State::Value,      { { SToken::EType::Value, State::Value }, { SToken::EType::Arg, State::Arg }, { SToken::EType::EOL, State::End }, { SToken::EType::Word, State::Error }, { SToken::EType::Invalid, State::Error } } }
     };
 
@@ -20,7 +20,7 @@ std::unique_ptr<ICommand> Parser::parse(std::istream& inputStream) {
     std::unordered_map<std::string, std::vector<std::variant<std::string, int, double>>> commandArgs;
 
     while (true) {
-        std::unique_ptr<SToken> token = tokenizer->tokenize(inputStream);
+        std::shared_ptr<SToken> token = tokenizer->tokenize(inputStream);
         if (!token) break; 
 
         // Determine the next state based on the current state and token type

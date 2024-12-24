@@ -15,7 +15,7 @@ AddSlide::AddSlide(const std::unordered_map<std::string, std::vector<std::varian
 void AddSlide::exe() {
     if (position >= 0) {
         // Create a new slide with a unique name based on the current slide count
-        auto slide = std::make_unique<Slide>("Slide " + std::to_string(Application::get_instance().get_editor()->getDocument()->getCountOfSlides() + 1));
+        auto slide = std::make_shared<Slide>("Slide " + std::to_string(Application::get_instance().get_editor()->getDocument()->getCountOfSlides() + 1));
         
         // Ensure position is valid before adding the slide
         if (position < 0 || position > Application::get_instance().get_editor()->getDocument()->getCountOfSlides()) {
@@ -24,7 +24,7 @@ void AddSlide::exe() {
         }
 
         // Create the action and pass it to the editor's progress method
-        auto add_action = std::make_shared<editor::AddSlideAction>(*slide, position);
+        auto add_action = std::make_shared<AddSlideAction>(slide, position);
         Application::get_instance().get_editor()->progress(add_action);
     } else {
         std::cerr << "Failed to add slide: Invalid position." << std::endl;

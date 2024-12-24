@@ -6,6 +6,7 @@
 
 class IAction : public std::enable_shared_from_this<IAction> {
 public:
+    IAction() = default;
     virtual ~IAction() = default;
 
     // Executes the action and returns a pointer to the inverse action

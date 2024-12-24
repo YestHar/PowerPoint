@@ -1,8 +1,8 @@
 #include "Slide.hpp"
 
 // Add a new item to the slide
-void Slide::addItem(std::unique_ptr<Item> item) {
-    items.push_back(std::move(item));
+void Slide::addItem(std::shared_ptr<Item> item) {
+    items.push_back(item);
 }
 
 // Get an item by index

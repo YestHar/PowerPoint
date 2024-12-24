@@ -10,13 +10,12 @@ void Controller::startProgram() {
             auto parser = Application::get_instance().get_parser();
 
             // Parse the input command
-            std::unique_ptr<ICommand> command = parser->parse(std::cin);
+            std::shared_ptr<ICommand> command = parser->parse(std::cin);
 
-            // Execute the command (this should trigger the relevant action)
+            // Execute the command 
             command->exe();
 
-            // Optionally break or loop based on certain commands
-            // For example, you can check for an "exit" command
+            // Check if the command indicates the program should exit
             if (command->should_exit()) {
                 std::cout << "Exiting program...\n";
                 break;

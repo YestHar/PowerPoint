@@ -2,11 +2,18 @@
 #include "RemoveSlideAction.hpp"
 
 
-AddSlideAction::AddSlideAction(Slide slide, int index) : currentSlide(slide), slideIndex(index)
+// AddSlideAction::AddSlideAction(Slide slide, int index) : currentSlide(slide), slideIndex(index)
+// {};
+
+AddSlideAction::AddSlideAction(std::shared_ptr<Slide> slide, int index) : currentSlide(slide), slideIndex(index)
 {};
 
+AddSlideAction::AddSlideAction(int index): slideIndex(index){}
+
+
+
 std::shared_ptr<IAction> AddSlideAction::do_action(std::shared_ptr<SlideCollection> document) {
-    document->addSlide(std::move(std::make_unique<Slide>(currentSlide)), slideIndex);
+    document->addSlide(currentSlide, slideIndex);
     return std::make_shared<RemoveSlideAction>(slideIndex);
 }
 

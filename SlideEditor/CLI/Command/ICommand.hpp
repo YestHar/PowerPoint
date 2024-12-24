@@ -9,7 +9,7 @@
 #include <variant>
 #include "../../Application/Application.hpp"
 
-class Application;
+// class Application;
 
 class ICommand {
 public:

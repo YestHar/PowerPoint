@@ -2,11 +2,11 @@
 #include <stdexcept>
 
 // Add a new slide at a specific position
-void SlideCollection::addSlide(std::unique_ptr<Slide> slide, int position) {
+void SlideCollection::addSlide(std::shared_ptr<Slide> slide, int position) {
     if (position < 0 || position > static_cast<int>(slides.size())) {
         throw std::out_of_range("Position is out of range");
     }
-    slides.insert(slides.begin() + position, std::move(slide));
+    slides.insert(slides.begin() + position, slide);
 }
 
 // Get the total number of slides
