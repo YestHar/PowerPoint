@@ -1,4 +1,4 @@
-
+// #include "ICommand.hpp"
 
 
 
@@ -63,25 +63,9 @@
 
 
 
-// View::View(Visualization& vis, const std::unordered_map<std::string, std::vector<std::variant<std::string, int, double>>>& args)
-//     : visualization(vis), slideIndex(-1) {
 
-//     auto it = args.find("slideIndex");
-//     if (it != args.end() && !it->second.empty()) {
-//         slideIndex = std::get<int>(it->second[0]);
-//     } else {
-//         std::cerr << "Invalid or missing slide index in View command." << std::endl;
-//     }
-// }
 
-// void View::exe() {
-//     if (slideIndex != -1) {
-//         std::cout << "Displaying Slide " << slideIndex << ":\n";
-//         visualization.print(std::cout, slideIndex);
-//     } else {
-//         std::cerr << "Failed to view slide: Invalid slide index." << std::endl;
-//     }
-// }
+
 
 
 

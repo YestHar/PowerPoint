@@ -17,7 +17,7 @@ public:
     Visualization(std::shared_ptr<SlideCollection> document) : slideCollection(document) {}
 
     // Print the details of a specified slide
-    void print(std::ostream& os, const SlideCollection& slideCollection, size_t slideIndex) const override;
+    void print(std::ostream& os, std::shared_ptr<SlideCollection> slideCollection, size_t slideIndex) const override;
 };
 
 #endif // VISUALIZATION_HPP

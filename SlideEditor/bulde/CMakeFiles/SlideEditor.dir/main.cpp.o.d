@@ -197,17 +197,15 @@ CMakeFiles/SlideEditor.dir/main.cpp.o: \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/CommandFactory.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/ICommand.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/../../Application/Application.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/RemoveSlide.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/ICommand.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/../../Editor/RemoveSlideAction.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/../../Editor/IAction.hpp \
+ /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/ICommand.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/AddSlide.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/../../Editor/AddSlideAction.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/../../Editor/../Document/Slide.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/Exit.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/Help.hpp \
+ /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/UndoRedo.hpp \
+ /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/SaveCommand.hpp \
+ /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/LoadCommand.hpp \
+ /home/codelinux/repos/PowerPoint/SlideEditor/Application/../CLI/Command/View.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/Application/../Visualization/Visualization.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/Application/../Visualization/IVisualization.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/Application/../Visualization/../Document/SlideCollection.hpp \

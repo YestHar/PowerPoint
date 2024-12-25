@@ -69,8 +69,6 @@ std::shared_ptr<SlideCollection> DocumentSerializer::load(const std::string& fil
                 
                 auto item = std::make_shared<Item>(0, 0, 100, 100, Attributes(), type);  // Default geometry and attributes
 
-               
-
                 // Read geometry
                 std::getline(file, line); // Geometry line
                 int x, y, width, height;

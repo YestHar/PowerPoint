@@ -201,14 +201,15 @@ CMakeFiles/SlideEditor.dir/CLI/Command/AddSlide.cpp.o: \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Command/CommandFactory.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Command/ICommand.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Command/RemoveSlide.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/ICommand.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Command/../../Editor/RemoveSlideAction.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Command/../../Editor/IAction.hpp \
+ /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Command/ICommand.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Command/AddSlide.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Command/Exit.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Command/Help.hpp \
+ /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Command/UndoRedo.hpp \
+ /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Command/SaveCommand.hpp \
+ /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Command/LoadCommand.hpp \
+ /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Command/View.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../Visualization/Visualization.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../Visualization/IVisualization.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../Visualization/../Document/SlideCollection.hpp \

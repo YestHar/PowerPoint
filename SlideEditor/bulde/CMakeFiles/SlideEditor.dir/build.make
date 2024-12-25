@@ -209,24 +209,10 @@ CMakeFiles/SlideEditor.dir/CLI/Command/Help.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SlideEditor.dir/CLI/Command/Help.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/Help.cpp -o CMakeFiles/SlideEditor.dir/CLI/Command/Help.cpp.s
 
-CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
-CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.o: ../CLI/Command/Redo.cpp
-CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.o -MF CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.o.d -o CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/Redo.cpp
-
-CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/Redo.cpp > CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.i
-
-CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/Redo.cpp -o CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.s
-
 CMakeFiles/SlideEditor.dir/CLI/Command/RemoveSlide.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
 CMakeFiles/SlideEditor.dir/CLI/Command/RemoveSlide.cpp.o: ../CLI/Command/RemoveSlide.cpp
 CMakeFiles/SlideEditor.dir/CLI/Command/RemoveSlide.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SlideEditor.dir/CLI/Command/RemoveSlide.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SlideEditor.dir/CLI/Command/RemoveSlide.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/CLI/Command/RemoveSlide.cpp.o -MF CMakeFiles/SlideEditor.dir/CLI/Command/RemoveSlide.cpp.o.d -o CMakeFiles/SlideEditor.dir/CLI/Command/RemoveSlide.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/RemoveSlide.cpp
 
 CMakeFiles/SlideEditor.dir/CLI/Command/RemoveSlide.cpp.i: cmake_force
@@ -240,7 +226,7 @@ CMakeFiles/SlideEditor.dir/CLI/Command/RemoveSlide.cpp.s: cmake_force
 CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
 CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.o: ../CLI/Command/ICommand.cpp
 CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.o -MF CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.o.d -o CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/ICommand.cpp
 
 CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.i: cmake_force
@@ -251,10 +237,66 @@ CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/ICommand.cpp -o CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.s
 
+CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
+CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.o: ../CLI/Command/SaveCommand.cpp
+CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.o -MF CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.o.d -o CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/SaveCommand.cpp
+
+CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/SaveCommand.cpp > CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.i
+
+CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/SaveCommand.cpp -o CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.s
+
+CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
+CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.o: ../CLI/Command/LoadCommand.cpp
+CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.o -MF CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.o.d -o CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/LoadCommand.cpp
+
+CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/LoadCommand.cpp > CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.i
+
+CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/LoadCommand.cpp -o CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.s
+
+CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
+CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.o: ../CLI/Command/UndoRedo.cpp
+CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.o -MF CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.o.d -o CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/UndoRedo.cpp
+
+CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/UndoRedo.cpp > CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.i
+
+CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/UndoRedo.cpp -o CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.s
+
+CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
+CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.o: ../CLI/Command/View.cpp
+CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.o -MF CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.o.d -o CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/View.cpp
+
+CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/View.cpp > CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.i
+
+CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/View.cpp -o CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.s
+
 CMakeFiles/SlideEditor.dir/Document/DocumentSerializer.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
 CMakeFiles/SlideEditor.dir/Document/DocumentSerializer.cpp.o: ../Document/DocumentSerializer.cpp
 CMakeFiles/SlideEditor.dir/Document/DocumentSerializer.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SlideEditor.dir/Document/DocumentSerializer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SlideEditor.dir/Document/DocumentSerializer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/Document/DocumentSerializer.cpp.o -MF CMakeFiles/SlideEditor.dir/Document/DocumentSerializer.cpp.o.d -o CMakeFiles/SlideEditor.dir/Document/DocumentSerializer.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/Document/DocumentSerializer.cpp
 
 CMakeFiles/SlideEditor.dir/Document/DocumentSerializer.cpp.i: cmake_force
@@ -268,7 +310,7 @@ CMakeFiles/SlideEditor.dir/Document/DocumentSerializer.cpp.s: cmake_force
 CMakeFiles/SlideEditor.dir/Document/Item.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
 CMakeFiles/SlideEditor.dir/Document/Item.cpp.o: ../Document/Item.cpp
 CMakeFiles/SlideEditor.dir/Document/Item.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SlideEditor.dir/Document/Item.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/SlideEditor.dir/Document/Item.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/Document/Item.cpp.o -MF CMakeFiles/SlideEditor.dir/Document/Item.cpp.o.d -o CMakeFiles/SlideEditor.dir/Document/Item.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/Document/Item.cpp
 
 CMakeFiles/SlideEditor.dir/Document/Item.cpp.i: cmake_force
@@ -282,7 +324,7 @@ CMakeFiles/SlideEditor.dir/Document/Item.cpp.s: cmake_force
 CMakeFiles/SlideEditor.dir/Document/Slide.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
 CMakeFiles/SlideEditor.dir/Document/Slide.cpp.o: ../Document/Slide.cpp
 CMakeFiles/SlideEditor.dir/Document/Slide.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SlideEditor.dir/Document/Slide.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/SlideEditor.dir/Document/Slide.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/Document/Slide.cpp.o -MF CMakeFiles/SlideEditor.dir/Document/Slide.cpp.o.d -o CMakeFiles/SlideEditor.dir/Document/Slide.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/Document/Slide.cpp
 
 CMakeFiles/SlideEditor.dir/Document/Slide.cpp.i: cmake_force
@@ -296,7 +338,7 @@ CMakeFiles/SlideEditor.dir/Document/Slide.cpp.s: cmake_force
 CMakeFiles/SlideEditor.dir/Document/SlideCollection.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
 CMakeFiles/SlideEditor.dir/Document/SlideCollection.cpp.o: ../Document/SlideCollection.cpp
 CMakeFiles/SlideEditor.dir/Document/SlideCollection.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SlideEditor.dir/Document/SlideCollection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/SlideEditor.dir/Document/SlideCollection.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/Document/SlideCollection.cpp.o -MF CMakeFiles/SlideEditor.dir/Document/SlideCollection.cpp.o.d -o CMakeFiles/SlideEditor.dir/Document/SlideCollection.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/Document/SlideCollection.cpp
 
 CMakeFiles/SlideEditor.dir/Document/SlideCollection.cpp.i: cmake_force
@@ -310,7 +352,7 @@ CMakeFiles/SlideEditor.dir/Document/SlideCollection.cpp.s: cmake_force
 CMakeFiles/SlideEditor.dir/Editor/AddSlideAction.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
 CMakeFiles/SlideEditor.dir/Editor/AddSlideAction.cpp.o: ../Editor/AddSlideAction.cpp
 CMakeFiles/SlideEditor.dir/Editor/AddSlideAction.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/SlideEditor.dir/Editor/AddSlideAction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/SlideEditor.dir/Editor/AddSlideAction.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/Editor/AddSlideAction.cpp.o -MF CMakeFiles/SlideEditor.dir/Editor/AddSlideAction.cpp.o.d -o CMakeFiles/SlideEditor.dir/Editor/AddSlideAction.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/Editor/AddSlideAction.cpp
 
 CMakeFiles/SlideEditor.dir/Editor/AddSlideAction.cpp.i: cmake_force
@@ -324,7 +366,7 @@ CMakeFiles/SlideEditor.dir/Editor/AddSlideAction.cpp.s: cmake_force
 CMakeFiles/SlideEditor.dir/Editor/Editor.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
 CMakeFiles/SlideEditor.dir/Editor/Editor.cpp.o: ../Editor/Editor.cpp
 CMakeFiles/SlideEditor.dir/Editor/Editor.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/SlideEditor.dir/Editor/Editor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/SlideEditor.dir/Editor/Editor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/Editor/Editor.cpp.o -MF CMakeFiles/SlideEditor.dir/Editor/Editor.cpp.o.d -o CMakeFiles/SlideEditor.dir/Editor/Editor.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/Editor/Editor.cpp
 
 CMakeFiles/SlideEditor.dir/Editor/Editor.cpp.i: cmake_force
@@ -338,7 +380,7 @@ CMakeFiles/SlideEditor.dir/Editor/Editor.cpp.s: cmake_force
 CMakeFiles/SlideEditor.dir/Editor/RemoveSlideAction.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
 CMakeFiles/SlideEditor.dir/Editor/RemoveSlideAction.cpp.o: ../Editor/RemoveSlideAction.cpp
 CMakeFiles/SlideEditor.dir/Editor/RemoveSlideAction.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/SlideEditor.dir/Editor/RemoveSlideAction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/SlideEditor.dir/Editor/RemoveSlideAction.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/Editor/RemoveSlideAction.cpp.o -MF CMakeFiles/SlideEditor.dir/Editor/RemoveSlideAction.cpp.o.d -o CMakeFiles/SlideEditor.dir/Editor/RemoveSlideAction.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/Editor/RemoveSlideAction.cpp
 
 CMakeFiles/SlideEditor.dir/Editor/RemoveSlideAction.cpp.i: cmake_force
@@ -352,7 +394,7 @@ CMakeFiles/SlideEditor.dir/Editor/RemoveSlideAction.cpp.s: cmake_force
 CMakeFiles/SlideEditor.dir/Visualization/Visualization.cpp.o: CMakeFiles/SlideEditor.dir/flags.make
 CMakeFiles/SlideEditor.dir/Visualization/Visualization.cpp.o: ../Visualization/Visualization.cpp
 CMakeFiles/SlideEditor.dir/Visualization/Visualization.cpp.o: CMakeFiles/SlideEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/SlideEditor.dir/Visualization/Visualization.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/SlideEditor.dir/Visualization/Visualization.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlideEditor.dir/Visualization/Visualization.cpp.o -MF CMakeFiles/SlideEditor.dir/Visualization/Visualization.cpp.o.d -o CMakeFiles/SlideEditor.dir/Visualization/Visualization.cpp.o -c /home/codelinux/repos/PowerPoint/SlideEditor/Visualization/Visualization.cpp
 
 CMakeFiles/SlideEditor.dir/Visualization/Visualization.cpp.i: cmake_force
@@ -375,9 +417,12 @@ SlideEditor_OBJECTS = \
 "CMakeFiles/SlideEditor.dir/CLI/Command/CommandFactory.cpp.o" \
 "CMakeFiles/SlideEditor.dir/CLI/Command/Exit.cpp.o" \
 "CMakeFiles/SlideEditor.dir/CLI/Command/Help.cpp.o" \
-"CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.o" \
 "CMakeFiles/SlideEditor.dir/CLI/Command/RemoveSlide.cpp.o" \
 "CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.o" \
+"CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.o" \
+"CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.o" \
+"CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.o" \
+"CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.o" \
 "CMakeFiles/SlideEditor.dir/Document/DocumentSerializer.cpp.o" \
 "CMakeFiles/SlideEditor.dir/Document/Item.cpp.o" \
 "CMakeFiles/SlideEditor.dir/Document/Slide.cpp.o" \
@@ -400,9 +445,12 @@ SlideEditor: CMakeFiles/SlideEditor.dir/CLI/Command/AddSlide.cpp.o
 SlideEditor: CMakeFiles/SlideEditor.dir/CLI/Command/CommandFactory.cpp.o
 SlideEditor: CMakeFiles/SlideEditor.dir/CLI/Command/Exit.cpp.o
 SlideEditor: CMakeFiles/SlideEditor.dir/CLI/Command/Help.cpp.o
-SlideEditor: CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.o
 SlideEditor: CMakeFiles/SlideEditor.dir/CLI/Command/RemoveSlide.cpp.o
 SlideEditor: CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.o
+SlideEditor: CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.o
+SlideEditor: CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.o
+SlideEditor: CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.o
+SlideEditor: CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.o
 SlideEditor: CMakeFiles/SlideEditor.dir/Document/DocumentSerializer.cpp.o
 SlideEditor: CMakeFiles/SlideEditor.dir/Document/Item.cpp.o
 SlideEditor: CMakeFiles/SlideEditor.dir/Document/Slide.cpp.o
@@ -413,7 +461,7 @@ SlideEditor: CMakeFiles/SlideEditor.dir/Editor/RemoveSlideAction.cpp.o
 SlideEditor: CMakeFiles/SlideEditor.dir/Visualization/Visualization.cpp.o
 SlideEditor: CMakeFiles/SlideEditor.dir/build.make
 SlideEditor: CMakeFiles/SlideEditor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable SlideEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/codelinux/repos/PowerPoint/SlideEditor/bulde/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable SlideEditor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SlideEditor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

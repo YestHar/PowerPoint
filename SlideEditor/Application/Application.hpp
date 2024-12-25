@@ -23,7 +23,7 @@ public:
 
     // Methods to access the components
     std::shared_ptr<Editor> get_editor() const;
-    std::shared_ptr<SlideCollection> get_document() const;
+    std::shared_ptr<SlideCollection>& get_document();
     std::shared_ptr<Parser> get_parser() const;
     std::shared_ptr<Visualization> get_visualization() const;
     std::shared_ptr<Controller> get_controller() const;  // Add access to Controller

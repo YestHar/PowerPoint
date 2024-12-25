@@ -273,29 +273,29 @@ CLI/Command/ICommand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/ICommand.cpp.s
 .PHONY : CLI/Command/ICommand.cpp.s
 
-CLI/Command/Redo.o: CLI/Command/Redo.cpp.o
-.PHONY : CLI/Command/Redo.o
+CLI/Command/LoadCommand.o: CLI/Command/LoadCommand.cpp.o
+.PHONY : CLI/Command/LoadCommand.o
 
 # target to build an object file
-CLI/Command/Redo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.o
-.PHONY : CLI/Command/Redo.cpp.o
+CLI/Command/LoadCommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.o
+.PHONY : CLI/Command/LoadCommand.cpp.o
 
-CLI/Command/Redo.i: CLI/Command/Redo.cpp.i
-.PHONY : CLI/Command/Redo.i
+CLI/Command/LoadCommand.i: CLI/Command/LoadCommand.cpp.i
+.PHONY : CLI/Command/LoadCommand.i
 
 # target to preprocess a source file
-CLI/Command/Redo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.i
-.PHONY : CLI/Command/Redo.cpp.i
+CLI/Command/LoadCommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.i
+.PHONY : CLI/Command/LoadCommand.cpp.i
 
-CLI/Command/Redo.s: CLI/Command/Redo.cpp.s
-.PHONY : CLI/Command/Redo.s
+CLI/Command/LoadCommand.s: CLI/Command/LoadCommand.cpp.s
+.PHONY : CLI/Command/LoadCommand.s
 
 # target to generate assembly for a file
-CLI/Command/Redo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/Redo.cpp.s
-.PHONY : CLI/Command/Redo.cpp.s
+CLI/Command/LoadCommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/LoadCommand.cpp.s
+.PHONY : CLI/Command/LoadCommand.cpp.s
 
 CLI/Command/RemoveSlide.o: CLI/Command/RemoveSlide.cpp.o
 .PHONY : CLI/Command/RemoveSlide.o
@@ -320,6 +320,78 @@ CLI/Command/RemoveSlide.s: CLI/Command/RemoveSlide.cpp.s
 CLI/Command/RemoveSlide.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/RemoveSlide.cpp.s
 .PHONY : CLI/Command/RemoveSlide.cpp.s
+
+CLI/Command/SaveCommand.o: CLI/Command/SaveCommand.cpp.o
+.PHONY : CLI/Command/SaveCommand.o
+
+# target to build an object file
+CLI/Command/SaveCommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.o
+.PHONY : CLI/Command/SaveCommand.cpp.o
+
+CLI/Command/SaveCommand.i: CLI/Command/SaveCommand.cpp.i
+.PHONY : CLI/Command/SaveCommand.i
+
+# target to preprocess a source file
+CLI/Command/SaveCommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.i
+.PHONY : CLI/Command/SaveCommand.cpp.i
+
+CLI/Command/SaveCommand.s: CLI/Command/SaveCommand.cpp.s
+.PHONY : CLI/Command/SaveCommand.s
+
+# target to generate assembly for a file
+CLI/Command/SaveCommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/SaveCommand.cpp.s
+.PHONY : CLI/Command/SaveCommand.cpp.s
+
+CLI/Command/UndoRedo.o: CLI/Command/UndoRedo.cpp.o
+.PHONY : CLI/Command/UndoRedo.o
+
+# target to build an object file
+CLI/Command/UndoRedo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.o
+.PHONY : CLI/Command/UndoRedo.cpp.o
+
+CLI/Command/UndoRedo.i: CLI/Command/UndoRedo.cpp.i
+.PHONY : CLI/Command/UndoRedo.i
+
+# target to preprocess a source file
+CLI/Command/UndoRedo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.i
+.PHONY : CLI/Command/UndoRedo.cpp.i
+
+CLI/Command/UndoRedo.s: CLI/Command/UndoRedo.cpp.s
+.PHONY : CLI/Command/UndoRedo.s
+
+# target to generate assembly for a file
+CLI/Command/UndoRedo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/UndoRedo.cpp.s
+.PHONY : CLI/Command/UndoRedo.cpp.s
+
+CLI/Command/View.o: CLI/Command/View.cpp.o
+.PHONY : CLI/Command/View.o
+
+# target to build an object file
+CLI/Command/View.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.o
+.PHONY : CLI/Command/View.cpp.o
+
+CLI/Command/View.i: CLI/Command/View.cpp.i
+.PHONY : CLI/Command/View.i
+
+# target to preprocess a source file
+CLI/Command/View.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.i
+.PHONY : CLI/Command/View.cpp.i
+
+CLI/Command/View.s: CLI/Command/View.cpp.s
+.PHONY : CLI/Command/View.s
+
+# target to generate assembly for a file
+CLI/Command/View.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlideEditor.dir/build.make CMakeFiles/SlideEditor.dir/CLI/Command/View.cpp.s
+.PHONY : CLI/Command/View.cpp.s
 
 CLI/Controller.o: CLI/Controller.cpp.o
 .PHONY : CLI/Controller.o
@@ -660,12 +732,21 @@ help:
 	@echo "... CLI/Command/ICommand.o"
 	@echo "... CLI/Command/ICommand.i"
 	@echo "... CLI/Command/ICommand.s"
-	@echo "... CLI/Command/Redo.o"
-	@echo "... CLI/Command/Redo.i"
-	@echo "... CLI/Command/Redo.s"
+	@echo "... CLI/Command/LoadCommand.o"
+	@echo "... CLI/Command/LoadCommand.i"
+	@echo "... CLI/Command/LoadCommand.s"
 	@echo "... CLI/Command/RemoveSlide.o"
 	@echo "... CLI/Command/RemoveSlide.i"
 	@echo "... CLI/Command/RemoveSlide.s"
+	@echo "... CLI/Command/SaveCommand.o"
+	@echo "... CLI/Command/SaveCommand.i"
+	@echo "... CLI/Command/SaveCommand.s"
+	@echo "... CLI/Command/UndoRedo.o"
+	@echo "... CLI/Command/UndoRedo.i"
+	@echo "... CLI/Command/UndoRedo.s"
+	@echo "... CLI/Command/View.o"
+	@echo "... CLI/Command/View.i"
+	@echo "... CLI/Command/View.s"
 	@echo "... CLI/Controller.o"
 	@echo "... CLI/Controller.i"
 	@echo "... CLI/Controller.s"

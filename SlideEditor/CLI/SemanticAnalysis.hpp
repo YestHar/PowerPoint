@@ -17,15 +17,24 @@ public:
 
     static bool isValidPositiveInteger(const std::string& value);
     static bool isValidColor(const std::string& value);
+    static bool isValidFilename(const std::string& filename);
 
 private:
     std::unordered_map<std::string, std::unordered_map<std::string, std::function<bool(const std::string&)>>> commandRules = {
         {"addslide", {{"pos", isValidPositiveInteger}}},
         {"removeslide", {{"pos", isValidPositiveInteger}}},
-        {"view", {{"pos", isValidPositiveInteger}}},
+        {"view", {{"id", isValidPositiveInteger}}},
+        {"addshape", {{"id", isValidPositiveInteger}, {"type", isValidPositiveInteger}, {"color", isValidColor}, {"borderwidth", isValidPositiveInteger}, {"bordercolor", isValidColor}, {"x", isValidPositiveInteger}, {"y", isValidPositiveInteger}, {"width", isValidPositiveInteger}, {"height", isValidPositiveInteger}}},
+        {"removeshape", {{"id", isValidPositiveInteger}, {"shapeid", isValidPositiveInteger}}},
+        {"changeshapecolor", {{"id", isValidPositiveInteger}, {"shapeid", isValidPositiveInteger}, {"color", isValidColor}}},
+        {"changeshapeborder", {{"id", isValidPositiveInteger}, {"shapeid", isValidPositiveInteger}, {"borderwidth", isValidPositiveInteger}, {"bordercolor", isValidColor}}},
         {"exit", {}},
         {"help", {}},
-        {"changeslidebg", {{"slide_id", isValidPositiveInteger}, {"color", isValidColor}}},
+        {"udno", {}},
+        {"redo", {}},
+        {"save", {{"filename", isValidFilename}}},
+        {"load", {{"filename", isValidFilename}}},
+        {"changeslidebg", {{"id", isValidPositiveInteger}, {"color", isValidColor}}},
         {"swapslide", {{"pos", isValidPositiveInteger}}}
     };
 

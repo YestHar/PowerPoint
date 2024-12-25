@@ -7,7 +7,7 @@ std::shared_ptr<ICommand> Parser::parse(std::istream& inputStream) {
         { State::Start,      { { SToken::EType::Word, State::Cmd }, { SToken::EType::EOL, State::End }, { SToken::EType::Arg, State::Error }, { SToken::EType::Value, State::Error }, { SToken::EType::Invalid, State::Error } } },
         { State::Cmd,        { { SToken::EType::Word, State::Cmd }, { SToken::EType::Arg, State::CurrentCmd }, { SToken::EType::EOL, State::End }, { SToken::EType::Value, State::Error }, { SToken::EType::Invalid, State::Error } } },
         { State::CurrentCmd, { { SToken::EType::Arg, State::Arg } } },
-        { State::Arg,        { { SToken::EType::Arg, State::Arg }, { SToken::EType::Value, State::Value }, { SToken::EType::EOL, State::Error }, { SToken::EType::Word, State::Error }, { SToken::EType::Invalid, State::Error } } },
+        { State::Arg,        { { SToken::EType::Arg, State::Arg }, { SToken::EType::Value, State::Value }, { SToken::EType::EOL, State::Error }, { SToken::EType::Word, State::Value }, { SToken::EType::Invalid, State::Error } } },
         { State::Value,      { { SToken::EType::Value, State::Value }, { SToken::EType::Arg, State::Arg }, { SToken::EType::EOL, State::End }, { SToken::EType::Word, State::Error }, { SToken::EType::Invalid, State::Error } } }
     };
 
@@ -31,6 +31,8 @@ std::shared_ptr<ICommand> Parser::parse(std::istream& inputStream) {
             currentState = nextStateIt->second;
         }
 
+        std::cout << int(currentState) << std::endl;
+
         // Process tokens based on the current state
         switch (currentState) {
             case State::Cmd:
@@ -38,14 +40,21 @@ std::shared_ptr<ICommand> Parser::parse(std::istream& inputStream) {
                 break;
 
             case State::CurrentCmd:
+                std::cout << "CURRENT CMD STATE" << std::endl;
                 if (!semanticAnalyzer.isValidCommand(commandWord)) {
                     throw std::runtime_error("Invalid command: " + commandWord);
                 }
-                currentState = State::Arg; 
-                break;
+                currentState = State::Arg;
+                std::cout << int(currentState) << std::endl;
+                // break;
 
             case State::Arg:
+                std::cout << "ARG STATE" << std::endl;
+                if (std::holds_alternative<std::string>(token->_content)) {
                 argument = std::get<std::string>(token->_content);
+                } else {
+                    std::cerr << "Error: token->_content does not hold a std::string" << std::endl;
+                }
                 if (!semanticAnalyzer.isValidArgument(argument)) {
                     throw std::runtime_error("Invalid argument: " + argument);
                 }
@@ -53,7 +62,16 @@ std::shared_ptr<ICommand> Parser::parse(std::istream& inputStream) {
                 break;
 
             case State::Value:
-                value = std::get<std::string>(token->_content);
+                std::cout << "VALUE STATE" << std::endl;
+                if (std::holds_alternative<int>(token->_content)) {
+                    int val = std::get<int>(token->_content);
+                    value = std::to_string(val);
+                } else if (std::holds_alternative<std::string>(token->_content)) {
+                    std::cout << "string" << std::endl;
+                    value = std::get<std::string>(token->_content);
+                } else {
+                    std::cerr << "Error: token->_content does not hold a std::string" << std::endl;
+                }
                 if (!semanticAnalyzer.isValidValue(value)) {
                     throw std::runtime_error("Invalid value: " + value);
                 }
@@ -61,6 +79,7 @@ std::shared_ptr<ICommand> Parser::parse(std::istream& inputStream) {
                 break;
 
             case State::End:
+                std::cout << "END STATE" << std::endl;
                 return commandFactory.createCommand(commandWord, commandArgs);
 
             case State::Error:

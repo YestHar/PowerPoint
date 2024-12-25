@@ -2,7 +2,6 @@
 #define ADDSLIDE_HPP
 
 #include "ICommand.hpp"
-#include "../../Editor/AddSlideAction.hpp"
 #include <iostream>
 #include <memory>
 

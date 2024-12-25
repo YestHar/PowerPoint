@@ -16,7 +16,7 @@ struct SToken {
         Arg,
         Value,
         Invalid,
-        EOL 
+        EOL
     } _type;
 
     std::variant<std::string, int, double> _content;

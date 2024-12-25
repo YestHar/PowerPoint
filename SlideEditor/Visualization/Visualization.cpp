@@ -1,8 +1,8 @@
 #include "Visualization.hpp"
 
-void Visualization::print(std::ostream& os, const SlideCollection& slideCollection, size_t slideIndex) const{
+void Visualization::print(std::ostream& os, std::shared_ptr<SlideCollection> slideCollection, size_t slideIndex) const{
     // Get the slide by index
-    const std::shared_ptr<Slide> slide = slideCollection.getSlide(slideIndex);
+    const std::shared_ptr<Slide> slide = slideCollection->getSlide(slideIndex);
     if (!slide) {
         os << "Slide " << slideIndex << " not found.\n";
         return;
@@ -23,7 +23,7 @@ void Visualization::print(std::ostream& os, const SlideCollection& slideCollecti
         std::shared_ptr<Item> item = slide->getItem(i);
         if (item) {
             os << "Item " << i << " - ";
-            os << "Type: " << static_cast<int>(item->get_type()) << "\n"; // Just as a placeholder, type not specified in Item.hpp
+            os << "Type: " << static_cast<int>(item->get_type()) << "\n"; 
 
             // Print Attributes
             os << "Attributes:\n";

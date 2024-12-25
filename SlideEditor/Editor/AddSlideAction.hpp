@@ -7,7 +7,6 @@
 
 class AddSlideAction : public IAction {
 public:
-    // explicit AddSlideAction(Slide slide, int slideIndex);
     explicit AddSlideAction(std::shared_ptr<Slide> slide, int slideIndex);
     explicit AddSlideAction(int index);
 
@@ -16,7 +15,6 @@ public:
 
 private:
     int slideIndex;
-    // Slide currentSlide;
     std::shared_ptr<Slide> currentSlide;
 };
 

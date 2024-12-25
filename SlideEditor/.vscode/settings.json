@@ -48,6 +48,10 @@
         "variant": "cpp",
         "unordered_set": "cpp",
         "map": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "bitset": "cpp",
+        "cstring": "cpp",
+        "ctime": "cpp",
+        "regex": "cpp"
     }
 }

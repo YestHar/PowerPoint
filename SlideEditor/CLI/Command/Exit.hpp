@@ -2,13 +2,12 @@
 #define EXIT_HPP
 
 #include "ICommand.hpp"
-#include <iostream>
-#include <memory>
 
 
 class Exit : public ICommand {
 public:
     void exe() override;
+    bool should_exit() const override;
 };
 
 #endif // EXIT_HPP

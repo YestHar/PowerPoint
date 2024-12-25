@@ -2,8 +2,6 @@
 #define HELP_HPP
 
 #include "ICommand.hpp"
-#include <iostream>
-#include <memory>
 
 
 class Help : public ICommand {

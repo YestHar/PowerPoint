@@ -1,4 +1,5 @@
 #include "SemanticAnalysis.hpp"
+#include <regex>
 
 bool SemanticAnalysis::isValidCommand(const std::string& command) {
     if (commandRules.find(command) != commandRules.end()) {
@@ -36,7 +37,7 @@ bool SemanticAnalysis::isValidPositiveInteger(const std::string& value) {
     std::istringstream iss(value);
     int intValue;
     iss >> intValue;
-    return !iss.fail() && intValue > 0;
+    return !iss.fail() && intValue >= 0;
 }
 
 bool SemanticAnalysis::isValidColor(const std::string& value) {
@@ -46,4 +47,22 @@ bool SemanticAnalysis::isValidColor(const std::string& value) {
     };
 
     return validColors.find(value) != validColors.end();
+}
+
+bool SemanticAnalysis::isValidFilename(const std::string& filename) {
+    // Define a regular expression for valid filenames
+    const std::regex validFilenameRegex(R"(^[a-zA-Z0-9_\-\.]+(\.[a-zA-Z0-9]+)?$)");
+
+    // Check if the filename matches the regex
+    if (!std::regex_match(filename, validFilenameRegex)) {
+        return false;
+    }
+
+    // Optional: Check length constraints
+    if (filename.length() > 255 || filename.empty()) {
+        return false;
+    }
+
+
+    return true; // No extension required, but the base name is valid
 }

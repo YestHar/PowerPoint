@@ -10,7 +10,11 @@ void Controller::startProgram() {
             auto parser = Application::get_instance().get_parser();
 
             // Parse the input command
-            std::shared_ptr<ICommand> command = parser->parse(std::cin);
+            std::string input;
+            std::getline(std::cin, input);
+
+            std::stringstream inputStream(input);
+            std::shared_ptr<ICommand> command = parser->parse(inputStream);
 
             // Execute the command 
             command->exe();

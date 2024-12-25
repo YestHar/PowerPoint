@@ -33,9 +33,12 @@ set(SOURCES
     CLI/Command/CommandFactory.cpp
     CLI/Command/Exit.cpp
     CLI/Command/Help.cpp
-    CLI/Command/Redo.cpp
     CLI/Command/RemoveSlide.cpp
     CLI/Command/ICommand.cpp
+    CLI/Command/SaveCommand.cpp  # New file
+    CLI/Command/LoadCommand.cpp  # New file
+    CLI/Command/UndoRedo.cpp
+    CLI/Command/View.cpp
 
     # Document
     Document/DocumentSerializer.cpp

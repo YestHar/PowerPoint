@@ -20,7 +20,7 @@ std::shared_ptr<Editor> Application::get_editor() const {
     return editor;
 }
 
-std::shared_ptr<SlideCollection> Application::get_document() const {
+std::shared_ptr<SlideCollection>& Application::get_document() {
     return document;
 }
 

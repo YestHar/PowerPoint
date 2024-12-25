@@ -188,34 +188,12 @@ CMakeFiles/SlideEditor.dir/CLI/Parser.cpp.o: \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/CommandFactory.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/ICommand.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/Application.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../Editor/Editor.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../Editor/IAction.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../Editor/../Document/SlideCollection.hpp \
- /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../Editor/../Document/Slide.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../Editor/../Document/Item.hpp \
- /usr/include/c++/11/stack /usr/include/c++/11/deque \
- /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
- /usr/include/c++/11/bits/stl_stack.h \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../Document/SlideCollection.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Parser.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../Visualization/Visualization.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../Visualization/IVisualization.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../Visualization/../Document/SlideCollection.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../Visualization/../Document/Slide.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../Visualization/../Document/Item.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Controller.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/../Application/Application.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Command/ICommand.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Application/../CLI/Parser.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/RemoveSlide.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/ICommand.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Editor/RemoveSlideAction.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Editor/IAction.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/AddSlide.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Editor/AddSlideAction.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/../../Editor/../Document/Slide.hpp \
  /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/Exit.hpp \
- /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/Help.hpp
+ /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/Help.hpp \
+ /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/UndoRedo.hpp \
+ /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/SaveCommand.hpp \
+ /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/LoadCommand.hpp \
+ /home/codelinux/repos/PowerPoint/SlideEditor/CLI/Command/View.hpp

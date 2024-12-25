@@ -3,8 +3,12 @@
 
 // Add a new slide at a specific position
 void SlideCollection::addSlide(std::shared_ptr<Slide> slide, int position) {
-    if (position < 0 || position > static_cast<int>(slides.size())) {
+    if (position < 0 || position > static_cast<int>(slides.size()) + 1) {
         throw std::out_of_range("Position is out of range");
+    }
+    if (slides.size() + 1 == position) {
+        slides.push_back(slide);
+        return;
     }
     slides.insert(slides.begin() + position, slide);
 }

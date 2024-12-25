@@ -1,10 +1,6 @@
 #include "AddSlideAction.hpp"
 #include "RemoveSlideAction.hpp"
 
-
-// AddSlideAction::AddSlideAction(Slide slide, int index) : currentSlide(slide), slideIndex(index)
-// {};
-
 AddSlideAction::AddSlideAction(std::shared_ptr<Slide> slide, int index) : currentSlide(slide), slideIndex(index)
 {};
 
